@@ -19,7 +19,7 @@
 
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <!-- fonts style -->
       <link
          href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
@@ -30,6 +30,7 @@
       <link href="css/font-awesome.min.css" rel="stylesheet" />
       <!-- Custom styles for this template -->
       <link href="css/style.css" rel="stylesheet" />
+      <link href="./css/style_quizz.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="css/responsive.css" rel="stylesheet" />
    </head>
@@ -92,55 +93,78 @@
                </div>
             </nav>
          </header>
-         <!-- end header section -->
-         <!-- slider section -->
-         <section class="slider_section long_section">
-            <div
-               id="customCarousel"
-               class="carousel slide"
-               data-ride="carousel"
-            >
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-5">
-                              <div class="detail-box">
-                                 <h1>
-                                    For All Your <br />
-                                    Furniture Needs
-                                 </h1>
-                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Minus quidem maiores
-                                    perspiciatis, illo maxime voluptatem a
-                                    itaque suscipit.
-                                 </p>
-                                 <div class="btn-box">
-                                    <a href="./sign_Up.html" class="btn1">
-                                       Sign_Up
-                                    </a>
-                                    <a href="./sign_In.html" class="btn2">
-                                       Sign_In
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-7">
-                              <div class="img-box">
-                                 <img src="images/slider-img.png" alt="" />
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+         <!-- quizz section --------------------------------------------------------------------------------------> 
+          <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
-         </section>
-      </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+      <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+      <script src="./js/questions.js"></script>
+      <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+      <script src="./js/script_quizz.js"></script>
+     <!-- ----------------- -->
       <!-- jQery -->
       <script src="js/jquery-3.4.1.min.js"></script>
       <!-- bootstrap js -->
       <script src="js/bootstrap.js"></script>
+
    </body>
 </html>
