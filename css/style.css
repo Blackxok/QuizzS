@@ -32,8 +32,8 @@ body {
 }
 
 .long_section {
-   margin-left: 45px;
-   margin-right: 45px;
+   /* margin-left: 45px; */
+   /* margin-right: 45px; */
    padding-left: 15px;
    padding-right: 15px;
 }
@@ -177,6 +177,7 @@ a:focus {
 }
 .quote_btn-container a span {
    margin-right: 5px;
+   font-weight: 500;
 }
 
 /*end header section*/
