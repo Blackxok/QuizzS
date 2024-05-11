@@ -7,7 +7,7 @@ isValidName = (e) => {
    return er.test(e);
 };
 function validName() {
-   if (isValidName(Up_name.value)) {
+   if (isValidName(Up_name.value) || Up_name.value.length === 0) {
       Up_name.classList.remove("wrong");
    } else {
       Up_name.classList.add("wrong");
@@ -19,7 +19,7 @@ isValidEmail = (e) => {
    return !!e.match(pa);
 };
 function validEmail() {
-   if (isValidEmail(Up_email.value)) {
+   if (isValidEmail(Up_email.value) || Up_email.value.length === 0) {
       Up_email.classList.remove("wrong");
    } else {
       Up_email.classList.add("wrong");
