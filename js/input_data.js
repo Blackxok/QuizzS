@@ -1,5 +1,7 @@
 let Up_name = document.getElementById("Up_name");
 let Up_email = document.getElementById("Up_email");
+let Up_pass = document.getElementById("Up_pass");
+let Up_re_pass = document.getElementById("Up_re_pass");
 
 // name Validation;
 isValidName = (e) => {
@@ -25,3 +27,28 @@ function validEmail() {
       Up_email.classList.add("wrong");
    }
 }
+
+// pass validation
+isValidPass = () => {
+   if (Up_pass.value.length > 7 || Up_pass.value.length === 0) {
+      Up_pass.classList.remove("wrong");
+   } else {
+      Up_pass.classList.add("wrong");
+   }
+};
+isRePass = () => {
+   Up_re_pass.value === Up_pass.value
+      ? Up_re_pass.classList.remove("wrong")
+      : Up_re_pass.classList.add("wrong");
+};
+
+console.log("s1");
+console.log("s2");
+
+window.setTimeout(() => {
+   console.log("in set 1");
+}, 2000);
+
+setTimeout(() => {
+   console.log("in set 2");
+}, 2000);
