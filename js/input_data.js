@@ -43,3 +43,41 @@ isRePass = () => {
 }
 
 ////////////////////////////////////////////////////////////////////////
+function register(event) {
+	event.preventDefault()
+
+	const login = document.getElementById('login').value
+	const name = document.getElementById('name').value
+	const email = document.getElementById('email').value
+	const password = document.getElementById('pass').value
+	const agreeTerm = document.getElementById('agree-term').checked
+
+	if (!agreeTerm) {
+		alert('You must agree to the terms of service.')
+		return
+	}
+
+	const data = {
+		login: login,
+		password: password,
+		name: name,
+		email: email,
+	}
+
+	fetch('https://myblog.education-online.uz/auth/registration', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(data),
+	})
+		.then(response => response.json())
+		.then(data => {
+			console.log('Success:', data)
+			alert('Registration successful!')
+		})
+		.catch(error => {
+			console.error('Error:', error)
+			alert('Registration failed. Please try again.')
+		})
+}

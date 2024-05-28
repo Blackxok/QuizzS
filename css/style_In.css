@@ -407,7 +407,7 @@ figure {
    display: inline-block;
    background: #6bb7be;
    color: #fff;
-   border-bottom: none;
+   /* border-bottom: none; */
    width: auto;
    padding: 15px 39px;
    border-radius: 5px;
@@ -453,9 +453,9 @@ figure {
    margin-bottom: 25px;
    overflow: hidden;
 }
-.form-group:last-child {
+/* .form-group:last-child {
    margin-bottom: 0px;
-}
+} */
 
 input {
    width: 100%;

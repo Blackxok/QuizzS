@@ -1,86 +1,66 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta
-         name="viewport"
-         content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <meta name="keywords" content="" />
-      <meta name="description" content="" />
-      <meta name="author" content="" />
 
-      <title>Sign Up</title>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
 
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-      <link
-         href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"
-         rel="stylesheet"
-      />
-      <link
-         rel="stylesheet"
-         href="./fonts/material-icon/css/material-design-iconic-font.min.css"
-      />
-      <link href="css/font-awesome.min.css" rel="stylesheet" />
-      <link href="css/style.css" rel="stylesheet" />
-      <link href="css/responsive.css" rel="stylesheet" />
-      <link rel="stylesheet" href="./css/style_In.css" />
-      <!-- scripts -->
-      <script src="./js/input_data.js" defer></script>
-   </head>
+   <title>Sign Up</title>
 
-   <body>
-      <header class="header_section long_section px-0">
-         <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
-               <span> LOGO </span>
-            </a>
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-toggle="collapse"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <!-- <span class="">dfuhd </span> -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <div
-                  class="d-flex mx-auto flex-column flex-lg-row align-items-center"
-               >
-                  <ul class="navbar-nav">
-                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"
-                           >Home <span class="sr-only">(current)</span></a
-                        >
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"> About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-               </div>
-               <div class="quote_btn-container">
-                  <a href="./sign_In.html">
-                     <span> Login </span>
-                     <i class="fa fa-user" aria-hidden="true"></i>
-                  </a>
-                  <form class="form-inline">
-                     <button
-                        class="btn my-2 my-sm-0 nav_search-btn"
-                        type="submit"
-                     ></button>
-                  </form>
-               </div>
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="./fonts/material-icon/css/material-design-iconic-font.min.css" />
+   <link href="css/font-awesome.min.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet" />
+   <link href="css/responsive.css" rel="stylesheet" />
+   <link rel="stylesheet" href="./css/style_In.css" />
+   <!-- scripts -->
+   <script src="./js/input_data.js" defer></script>
+</head>
+
+<body>
+   <header class="header_section long_section px-0">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+         <a class="navbar-brand" href="index.html">
+            <span> LOGO </span>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="">dfuhd </span> -->
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html"> About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+               </ul>
             </div>
-         </nav>
-      </header>
-      <!-- sign in form 1 -->
-      <section class="signup">
+            <div class="quote_btn-container">
+               <a href="./sign_In.html">
+                  <span> Login </span>
+                  <i class="fa fa-user" aria-hidden="true"></i>
+               </a>
+               <form class="form-inline">
+                  <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+               </form>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- sign in form 1 -->
+   <!-- <section class="signup">
          <div class="container">
             <div class="signup-content">
                <div class="signup-form">
@@ -166,6 +146,58 @@
                </div>
             </div>
          </div>
-      </section>
-   </body>
+      </section> -->
+   <section class="signup">
+      <div class="container">
+         <div class="signup-content">
+            <div class="signup-form">
+               <h2 class="form-title">Sign Up</h2>
+               <form method="POST" class="register-form" id="register-form" onsubmit="register(event)">
+                  <div class="form-group">
+                     <label for="login">
+                        <i class="zmdi zmdi-account material-icons-name"></i>
+                     </label>
+                     <input type="text" name="login" id="login" placeholder="login" onchange="validName()" />
+                  </div>
+                  <div class="form-group">
+                     <label for="name">
+                        <i class="zmdi zmdi-account material-icons-name"></i>
+                     </label>
+                     <input type="text" name="name" id="name" placeholder="Name" onchange="validName()" />
+                  </div>
+                  <div class="form-group">
+                     <label for="email">
+                        <i class="zmdi zmdi-email"></i>
+                     </label>
+                     <input type="email" name="email" id="email" placeholder="Email" onchange="validEmail()" />
+                  </div>
+                  <div class="form-group">
+                     <label for="pass">
+                        <i class="zmdi zmdi-lock"></i>
+                     </label>
+                     <input type="password" name="pass" id="pass" placeholder="Password" onchange="isValidPass()" />
+                  </div>
+                  <div class="form-group">
+                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                     <label for="agree-term" class="label-agree-term">
+                        <span><span></span></span>I agree all statements in
+                        <a href="#" class="term-service">Terms of service</a>
+                     </label>
+                  </div>
+                  <div class="form-group form-button">
+                     <button type="submit" class="form-submit">Register</button>
+                  </div>
+               </form>
+            </div>
+            <div class="signup-image">
+               <figure>
+                  <img src="images/signup-image.jpg" alt="sign up image" />
+               </figure>
+               <a href="#" id="btn-reg" class="signup-image-link">I am already member</a>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+
 </html>
